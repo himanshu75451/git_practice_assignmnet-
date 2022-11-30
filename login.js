@@ -1,2 +1,5 @@
-username="himanshu141";
-password="123456789";
+let username="himanshu141";
+let password="123456789";
+
+console.log(username);
+console.log(password);
