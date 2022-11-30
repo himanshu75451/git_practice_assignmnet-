@@ -1,11 +1,16 @@
 
 let num=13;
-let factor=0;
-for(let x=1; x<=num; x++){
-    if(num%x===0){
-        factor++;
+
+let isPrime = "Yes";
+
+if(num==1 || num==2){
+    console.log(isPrime);
+}else{
+    for(let i=2; i<num; i++){
+        if(num%i === 0){
+            isPrime = "No";
+            break;
+        }
     }
-}
-if(factor==1){
-    console.log("Yes");
+    console.log(isPrime);
 }
